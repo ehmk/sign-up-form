@@ -117,9 +117,14 @@ input {
   outline: none;
 }
 
+input:valid {
+  border: 2px solid rgb(29, 131, 29);
+}
+
 input:focus,
 input:hover {
   border: 1px solid #aac2f0;
+  box-shadow: 0 5px 15px -10px rgb(112, 111, 111);
 }
 
 label {
