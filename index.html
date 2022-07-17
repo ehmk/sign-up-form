@@ -10,7 +10,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="logo-section"></div>
+      <div class="logo-section">
+        <div class="logo">
+          <img src="images/odin-lined.png" alt="odin-logo" />
+          <h1>Odin</h1>
+        </div>
+        <p class="photo-credit">
+          Photo by
+          <a href="https://unsplash.com/@birkenwald">Birk Enwald</a>
+          on
+          <a href="https://unsplash.com/">Unplash</a>
+        </p>
+      </div>
       <div class="main">
         <div class="quote-section">
           <p>
@@ -26,36 +37,42 @@
         </div>
         <div class="form-section">
           <p>Let's do this!</p>
-          <form action="#">
+          <form action="#" id="registration-form">
             <div class="input-elements">
               <div class="form-input">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" placeholder="John" />
+                <input type="text" id="firstName" placeholder="John" required />
               </div>
               <div class="form-input">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" placeholder="Doe" />
+                <input type="text" id="lastName" placeholder="Doe" required />
               </div>
               <div class="form-input">
-                <label for="email">Email</label>
-                <input type="email" id="email" />
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" placeholder="johndoe@mail.com" required />
               </div>
               <div class="form-input">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" />
+                <input type="tel" id="phone" placeholder="000-000-0000" required />
               </div>
               <div class="form-input">
                 <label for="password">Password</label>
-                <input type="password" id="password" />
+                <input type="password" id="password" required />
               </div>
               <div class="form-input">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" />
+                <input type="password" id="confirm-password" required />
               </div>
             </div>
           </form>
         </div>
-        <div class="submit-section"></div>
+        <div class="submit-section">
+          <button type="submit" form="registration-form" value="Submit">Create Account</button>
+          <p>
+            Already have an account?
+            <a href="#">Log in</a>
+          </p>
+        </div>
       </div>
     </div>
   </body>
