@@ -168,6 +168,11 @@ a:visited {
   color: #6f885a;
 }
 
+#password-error {
+  font-size: 12px;
+  color: red;
+}
+
 /* 
     CSS RESET
     http://meyerweb.com/eric/tools/css/reset/ 
